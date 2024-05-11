@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 // import { StrictMode } from 'react';
+import "regenerator-runtime";
 import {jsx as _jsx} from 'react/jsx-runtime';
 import App from "./components/App";
 
