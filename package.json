@@ -1,0 +1,40 @@
+{
+  "name": "react_voice_stanp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miduki-gif/react_voice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miduki-gif/react_voice/issues"
+  },
+  "homepage": "https://github.com/miduki-gif/react_voice#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "@types/webspeechapi": "^0.0.29",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.16",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "lodash": "^4.17.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-speech-recognition": "^3.10.0"
+  }
+}

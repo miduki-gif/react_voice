@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+    "lib": [
+        "DOM",
+        "DOM.Iterable",
+        "ES2023"
+    ],
+    "allowJs": true,
+    "module": "node16",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node16",
+    // "noEmit": true,
+    // "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+  },
+  "include": [
+    "src"
+],
+}
