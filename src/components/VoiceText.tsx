@@ -1,14 +1,15 @@
-import 'regenerator-runtime';
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import Button from '@mui/material/Button';
+import "regenerator-runtime";
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
+import Button from "@mui/material/Button";
 
-
-const  VoiceTextComponetns = () => {
+const VoiceTextComponetns = () => {
   const {
     transcript,
     listening,
     resetTranscript,
-    browserSupportsSpeechRecognition
+    browserSupportsSpeechRecognition,
   } = useSpeechRecognition();
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
@@ -17,11 +18,26 @@ const  VoiceTextComponetns = () => {
   return (
     <div>
       <p>Status:{listening ? "on" : "off"}</p>
-      <Button type="button" onClick={() => SpeechRecognition.startListening({ language: 'ja', continuous: true })}>Start</Button>
-      <Button type="button" onClick={SpeechRecognition.stopListening}>Stop</Button>
-      <Button type="button" onClick={resetTranscript}>Reset</Button>
+      <Button
+        type="button"
+        onClick={() =>
+          SpeechRecognition.startListening({
+            language: "ja",
+            continuous: true,
+            interimResults: true,
+          })
+        }
+      >
+        Start
+      </Button>
+      <Button type="button" onClick={SpeechRecognition.stopListening}>
+        Stop
+      </Button>
+      <Button type="button" onClick={resetTranscript}>
+        Reset
+      </Button>
       <p>{transcript}</p>
     </div>
   );
 };
-export default  VoiceTextComponetns;
+export default VoiceTextComponetns;
