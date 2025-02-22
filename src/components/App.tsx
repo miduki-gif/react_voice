@@ -1,15 +1,12 @@
-// import {jsx as _jsx} from 'react/jsx-runtime';
 import "regenerator-runtime";
-import {jsx as _jsx} from 'react/jsx-runtime';
-import Button from '@mui/material/Button';
-import VoiceTextComponetns from './VoiceText';
+import  VoiceTextComponetns from './VoiceText';
 
 function App() {
-  const element = document.createElement('div');
+  const container= document.getElementById("root");
     return (
-      <>
+      <div>
         <VoiceTextComponetns />
-        </>
+        </div>
     );
 }
 export default App;
