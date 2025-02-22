@@ -17,7 +17,7 @@ const  VoiceTextComponetns = () => {
   return (
     <div>
       <p>Status:{listening ? "on" : "off"}</p>
-      <Button type="button" onClick={() => SpeechRecognition.startListening({ language: 'ja'})}>Start</Button>
+      <Button type="button" onClick={() => SpeechRecognition.startListening({ language: 'ja', continuous: true })}>Start</Button>
       <Button type="button" onClick={SpeechRecognition.stopListening}>Stop</Button>
       <Button type="button" onClick={resetTranscript}>Reset</Button>
       <p>{transcript}</p>
