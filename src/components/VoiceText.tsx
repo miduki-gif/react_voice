@@ -37,6 +37,7 @@ const VoiceTextComponetns = () => {
         Reset
       </Button>
       <p>{transcript}</p>
+      <div>aaa</div>
     </div>
   );
 };
